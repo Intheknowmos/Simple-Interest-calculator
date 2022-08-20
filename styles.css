@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#desc {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container {
+    margin: auto;
+    text-align: center; 
+    max-width: 45%;
+    border-radius: 20px;
+    background-color: green;
+}
+
+fieldset {
+    padding-bottom: 70px;
+    padding-top: 20px;
+    border: none;
+}
+
+div.table {
+    display: table;
+    margin: 16px auto 16px auto;
+}
+
+div.row {
+    display: table-row;
+}
+
+div.cell {
+    display: table-cell;
+    padding: 5px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+#small-note {
+    font-size: small;
+    font-style: italic;
+}
+
+select {
+    border: none;
+    width: 80%;
+}
+
+input[type=number] {
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#calculate-btn {
+    background-color: goldenrod;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#calculate-btn:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+#calculate-btn:active {
+    color: black;
+}
+
+#clear-btn {
+    background-color: goldenrod;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#clear-btn:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+#clear-btn:active {
+    color: black;
+}
+
+#display {
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .container {
+        display: block;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    div.table {
+        display: table-row;
+        text-align: center;
+    }
+
+    div.row {
+        display: block;
+        padding-left: 25px;
+    }
+
+    div.cell {
+        display: block;
+        padding-left: 25px;
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+
+    .split {
+        display: table-column;
+    }
+
+    select {
+        border: none;
+        width: 100%;
+    }
+
+    input[type=number] {
+        background-color: antiquewhite;
+        border: none;
+        border-radius: 2px;
+        padding: 5px;
+        width: 80%;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    #time-elapsed {
+        display: table-column;
+    }
+
+    #actual-time {
+        display: block;
+    }
+
+    #simple, #total-simple {
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px){
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .container {
+        display: block;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    div.table {
+        display: table-row;
+        text-align: center;
+    }
+
+    div.row {
+        display: block;
+        padding-left: 25px;
+    }
+
+    div.cell {
+        display: block;
+        padding-left: 100px;
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+
+    .split {
+        display: table-column;
+    }
+
+    select {
+        border: none;
+        width: 100%;
+    }
+
+    input[type=number] {
+        background-color: antiquewhite;
+        border: none;
+        border-radius: 2px;
+        padding: 5px;
+        width: 80%;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    #time-elapsed {
+        display: table-column;
+    }
+
+    #actual-time {
+        display: block;
+    }
+
+    #simple, #total-simple {
+        padding: 5px;
+    }
+}

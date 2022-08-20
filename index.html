@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Interest Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Simple Interest Calculator</h1>
+        <p id="desc">Calculate Simple Interest accrued on your Investments and Loans</p><hr>
+        <form action="" method="post" id="input-form">
+            <fieldset>
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <label for="principal-amount">Principal Amount ($)</label>
+                        </div>
+                        <div class="cell">
+                            <input type="number" name="principal" id="principal-amount">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <label for="rate-interest">Interest Rate % <br> <span id="small-note">per Annum</span></label>
+                        </div>
+                        <div class="cell">
+                            <input type="number" name="rate" id="rate-interest">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <label for="time-elapsed">Time Elapsed (t)</label>
+                        </div>
+                        <div class="cell split">
+                            <input type="number" name="time" id="time-elapsed"><br>
+                            <label for="actual-time" hidden></label>
+                            <select name="actual-time" id="actual-time">
+                                <option selected disabled>Select a timeframe</option>
+                                <option value="1">Years</option>
+                                <option value="0.0833">Months</option>
+                                <option value="0.019231">Weeks</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="calculate-btn">Calculate</button>
+                <button type="button" id="clear-btn">Clear</button>
+                <p id="display"></p>
+                <p id="display-total"></p> 
+            </fieldset>
+        </form>
+    </div>
+<script src="index.js"></script>    
+</body>
+</html>
